@@ -104,8 +104,8 @@ void loop()
     if (Temp < 0)
     {
       s7s1.print("-"); 
-      if (Temp > -1) setDecimals(0b1 << numDigits, 2);   
-      else  setDecimals(0b1 << numDigits + 1, 2);   
+      if (Temp > -1) setDecimals(0b1 << numDigits);   
+      else  setDecimals(0b1 << numDigits + 1);   
            
       sprintf(tempString, "%3d", displayVal);
       tempString[3] = '\0';
